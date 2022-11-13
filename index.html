@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Lato:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Tailwind CSS Practice</title>
+</head>
+
+<body>
+
+    <!-- hero section -->
+
+    <section class="container my-16 md:my-36 mx-auto px-[5%] flex flex-col md:flex-row items-center space-y-24 md:space-y-0 md:space-x-16">
+
+        <div class="flex flex-col md:w-1/2 space-y-5">
+
+            <h1 class="font-archivo text-[42px] md:text-[64px] font-bold leading-[50px] md:leading-[74px] text-darkBlue text-center md:text-left">Data Analysis Tools
+                & Methods</h1>
+
+            <p class="font-lato text-base md:text-[20px] font-normal leading-6 md:leading-8 text-gray-600 text-center md:text-left pb-4 md:pb-8">
+                Tosser bleeder haggle arse david happy days cockup mush lurgy wellies down the pub.
+            </p>
+
+            <div class="flex flex-row items-center justify-center md:justify-start">
+                <input type="text" placeholder="Enter your email"
+                    class="border-2 border-r-0 border-gray-300 rounded-l-full py-3 pl-8 pr-12 focus:outline-none">
+                <button type="submit"
+                    class="font-lato text-[14px] font-bold text-white text-center rounded-r-full py-4 bg-lightBlue px-6">Try
+                    Free</button>
+            </div>
+
+            <p class="font-lato text-[16px] font-normal text-gray-400 text-center md:text-left">Already have an account? <span
+                    class="text-lightBlue"><a href="#">Sign Up</a></span></p>
+
+            <a href="#" class="flex flex-row items-center justify-center md:justify-start">
+                <i class="fa fa-play-circle text-lightBlue text-5xl pr-4" aria-hidden="true"></i>
+                <p class="font-lato text-[14px] font-bold text-gray-500">Watch Video</p>
+            </a>
+
+        </div>
+
+        <div class="flex justify-center md:w-1/2">
+            <img class='w-[94%] h-[94%]' src="./images/hero-image.png" alt="hero-image">
+        </div>
+
+    </section>
+
+    <!-- Clients Logo -->
+
+    <div class="bg-[#F9FAFC] my-36 py-24">
+        <section class="container pb-44 mx-auto sm:px-3 md:px-[5%] space-y-6">
+            <p class="font-archivo text-[20px] text-center md:text-left font-bold border-b-[1px] border-b-gray-200 pb-4">Over <span
+                    class="text-lightBlue">145,00+ client</span> all over the world.</p>
+            <div class="relative">
+                <div id="logo-slide" class="flex whitespace-nowrap overflow-x-scroll scroll-smooth scrollbar-hide space-x-10 md:space-x-16 pt-8 transition-all duration-300 ease-in">
+                    <img src="./images/Asset 3.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 2.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 4.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 5.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 6.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 7.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 8.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 9.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 10.svg" alt="" class="grayscale w-24 h-24">
+                    <img src="./images/Asset 11.svg" alt="" class="grayscale w-24 h-24">
+                </div>
+                <div class="bg-gradient-to-l from-[#F9FAFC] absolute top-0 right-0 h-28 w-1/12"></div>
+                <div class="absolute top-0 md:top-[35%] left-0 md:-left-16 z-10 hidden md:block">
+                    <div id="slide-left" class="w-3 h-3 p-6 rounded-full drop-shadow-md hover:drop-shadow-2xl bg-white relative transition-all duration-300 ease-in-out"><i class="fa fa-chevron-left absolute m-0 text-gray-400 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"></i></div>
+                </div>
+                <div class="absolute top-0 md:top-[35%] right-0 md:-right-16 z-10 hidden md:block">
+                    <div id="slide-right" class="w-3 h-3 p-6 rounded-full drop-shadow-md hover:drop-shadow-2xl bg-white relative transition-all duration-300 ease-in-out"><i class="fa fa-chevron-right absolute m-0 text-gray-400 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+
+        <section class="container my-0 mx-auto px-3 md:px-[5%] space-y-2">
+            <p class="font-lato text-[14px] text-lightBlue uppercase text-center tracking-[0.45em] md:tracking-[0.65em] font-bold">Features
+            </p>
+            <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center pb-14">How does it
+                work</h1>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                <div
+                    class="pl-6 pr-20 py-14 drop-shadow-lg bg-white rounded-md group hover:bg-lightBlue hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100">
+                    <i class="fa fa-desktop text-4xl text-lightBlue group-hover:text-white bg-slate-100 group-hover:bg-lightBlue p-3 rounded-md mb-8 transition-all ease-in-out duration-500"
+                        aria-hidden="true"></i>
+                    <h1 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left mb-2 transition-all ease-in-out duration-500">
+                        Wireframing Task</h1>
+                    <p class="font-lato text-[16px] text-gray-500 group-hover:text-white text-left font-normal mb-8 transition-all ease-in-out duration-500">So
+                        I said say don't get shirty with me Oxford hanky panky crikey.</p>
+                    <a href="#" class="flex flex-row items-center">
+                        <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-white transition-all ease-in-out duration-500">Learn More</p>
+                        <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-white ml-2 transition-all ease-in-out duration-500"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div
+                    class="pl-6 pr-20 py-14 drop-shadow-lg bg-white rounded-md group hover:bg-lightBlue hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100">
+                    <i class="fa fa-cubes text-4xl text-lightBlue group-hover:text-white bg-slate-100 group-hover:bg-lightBlue p-3 rounded-md mb-8 transition-all ease-in-out duration-500"
+                        aria-hidden="true"></i>
+                    <h1 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left mb-2 transition-all ease-in-out duration-500">
+                        Web Design</h1>
+                    <p class="font-lato text-[16px] text-gray-500 group-hover:text-white text-left font-normal mb-8 transition-all ease-in-out duration-500">So
+                        I said say don't get shirty with me Oxford hanky panky crikey.</p>
+                    <a href="#" class="flex flex-row items-center">
+                        <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-white transition-all ease-in-out duration-500">Learn More</p>
+                        <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-white ml-2 transition-all ease-in-out duration-500"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div
+                    class="pl-6 pr-20 py-14 drop-shadow-lg bg-white rounded-md group hover:bg-lightBlue hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100">
+                    <i class="fa fa-code text-4xl text-lightBlue group-hover:text-white bg-slate-100 group-hover:bg-lightBlue p-3 rounded-md mb-8 transition-all ease-in-out duration-500"
+                        aria-hidden="true"></i>
+                    <h1 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left mb-2 transition-all ease-in-out duration-500">
+                        App Development</h1>
+                    <p class="font-lato text-[16px] text-gray-500 group-hover:text-white text-left font-normal mb-8 transition-all ease-in-out duration-500">So
+                        I said say don't get shirty with me Oxford hanky panky crikey.</p>
+                    <a href="#" class="flex flex-row items-center">
+                        <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-white transition-all ease-in-out duration-500">Learn More</p>
+                        <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-white ml-2 transition-all ease-in-out duration-500"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- More Sales Section -->
+
+    <section class="container my-0 md:my-36 mx-auto sm:px-3 md:px-[5%] flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-24">
+
+        <div class="md:w-1/2">
+            <img class='' src="./images/main-image.svg" alt="hero-image">
+        </div>
+
+        <div class="flex flex-col md:w-1/2 space-y-5">
+
+            <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-9 md:leading-[54px] text-darkBlue text-left">Get more sales<br>by
+                improving results</h1>
+
+            <p class="font-lato text-[16px] font-normal leading-6 md:leading-8 text-gray-400 text-left pb-6">
+                Laboris iusto curae incidunt eros eius distinctio exercitationem <br> rem laborum eveniet quibusdam.
+            </p>
+
+            <ul class="font-lato text-[16px] font-bold text-gray-600 text-left pb-6 space-y-4">
+                <li><i class="fa fa-check-circle text-green-500 mr-5" aria-hidden="true"></i>Saas Analytics</li>
+                <li><i class="fa fa-check-circle text-green-500 mr-5" aria-hidden="true"></i>Proration & Invoicing</li>
+                <li><i class="fa fa-check-circle text-green-500 mr-5" aria-hidden="true"></i>Product Catalog</li>
+            </ul>
+
+            <a href="#"
+                class="font-lato text-[14px] font-bold text-darkBlue text-center rounded-full py-3 px-4 border-2 border-gray-300 w-[28%] hover:text-white hover:bg-lightBlue hover:border-lightBlue transition-all ease-in-out duration-300">Explore
+                More</a>
+
+        </div>
+
+    </section>
+
+    <!-- Offer Section -->
+
+
+    <section class="container mx-auto mt-32 md:mt-64 sm:px-3 md:px-[5%] space-y-2">
+
+        <p class="font-lato text-[14px] text-lightBlue uppercase text-center md:text-left tracking-[0.45em] md:tracking-[0.65em] font-bold">Our Services</p>
+        <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center md:text-left pb-8 md:pb-14">What We Offer</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+                class="service-box relative pl-6 pr-20 py-10 hover:drop-shadow-2xl bg-white rounded-md overflow-hidden group transition-all ease-in-out duration-500">
+                <i class="fa fa-cloud text-4xl text-lightBlue p-3 mb-8" aria-hidden="true"></i>
+                <h1 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-2">Cloud Storage</h1>
+                <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-8">Do one knacker sloshed so I
+                    said a load of old tosh haggle lurgy some dodgy chav cheeky bugger.</p>
+                <a href="#" class="flex flex-row items-center">
+                    <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-lightBlue">Learn More</p>
+                    <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-lightBlue ml-2"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+            <div
+                class="service-box relative pl-6 pr-20 py-10 hover:drop-shadow-2xl bg-white rounded-md overflow-hidden group transition-all ease-in-out duration-500">
+                <i class="fa fa-rocket text-4xl text-lightBlue p-3 mb-8" aria-hidden="true"></i>
+                <h1 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-2">Performance Boost</h1>
+                <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-8">Do one knacker sloshed so I
+                    said a load of old tosh haggle lurgy some dodgy chav cheeky bugger.</p>
+                <a href="#" class="flex flex-row items-center">
+                    <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-lightBlue">Learn More</p>
+                    <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-lightBlue ml-2"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+            <div
+                class="service-box relative pl-6 pr-20 py-10 hover:drop-shadow-2xl bg-white rounded-md overflow-hidden group transition-all ease-in-out duration-500">
+                <i class="fa fa-thumbs-up text-4xl text-lightBlue p-3 mb-8" aria-hidden="true"></i>
+                <h1 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-2">Close to the Metal</h1>
+                <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-8">Do one knacker sloshed so I
+                    said a load of old tosh haggle lurgy some dodgy chav cheeky bugger.</p>
+                <a href="#" class="flex flex-row items-center">
+                    <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-lightBlue">Learn More</p>
+                    <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-lightBlue ml-2"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+            <div
+                class="service-box relative pl-6 pr-20 py-10 h-[80%] hover:drop-shadow-2xl bg-white rounded-md overflow-hidden group transition-all ease-in-out duration-500">
+                <i class="fa fa-clone text-4xl text-lightBlue p-3 mb-8" aria-hidden="true"></i>
+                <h1 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-2">Tools for Every Saas</h1>
+                <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-8">Do one knacker sloshed so I
+                    said a load of old tosh haggle lurgy some dodgy chav cheeky bugger.</p>
+                <a href="#" class="flex flex-row items-center">
+                    <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-lightBlue">Learn More</p>
+                    <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-lightBlue ml-2"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+            <div
+                class="service-box relative pl-6 pr-20 py-10 h-[80%] hover:drop-shadow-2xl bg-white rounded-md overflow-hidden group transition-all ease-in-out duration-500">
+                <i class="fa fa-file-text text-4xl text-lightBlue p-3 mb-8" aria-hidden="true"></i>
+                <h1 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-2">Tools for Every Saas</h1>
+                <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-8">Do one knacker sloshed so I
+                    said a load of old tosh haggle lurgy some dodgy chav cheeky bugger.</p>
+                <a href="#" class="flex flex-row items-center">
+                    <p class="font-lato text-[14px] font-bold text-gray-500 group-hover:text-lightBlue">Learn More</p>
+                    <i class="fa fa-chevron-right text-lg text-gray-500 group-hover:text-lightBlue ml-2"
+                        aria-hidden="true"></i>
+                </a>
+            </div>
+            <div
+                class="pl-10 pr-20 pt-16 md:pt-24 pb-16 md:pb-6 md:h-[110%] bg-lightBlue md:rounded-md md:rounded-tl-[15%] overflow-hidden group transition-all ease-in-out duration-500 relative">
+                <h1 class="font-archivo text-[30px] font-bold text-white text-left mb-6 leading-[38px]">Designed for
+                    Search Engines</h1>
+                <p class="font-lato text-[16px] text-white text-left font-normal mb-40">I don't want no agro bleeding
+                    say cup of char what.</p>
+                <a href="#"
+                    class="font-lato text-[14px] font-bold text-white text-center rounded-full py-3 px-6 border-2 border-white w-[28%] hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-300">Start
+                    Free Trial</a>
+                <div class=" flex justify-end w-[65%] absolute bottom-0 right-0 z-10 opacity-80">
+                    <img class='w-[70%] h-[70%]' src="./images/hero-image.png" alt="hero-image">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section class="bg-[#F9FAFC] rounded-tl-[15%] rounded-br-[15%]">
+        <div class="container mx-auto my-34 sm:px-3 md:px-[5%] py-24 space-y-2">
+            <p class="font-lato text-[14px] text-lightBlue uppercase text-center tracking-[0.45em] md:tracking-[0.65em] font-bold">PRICING
+                PLAN</p>
+            <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center pb-14">Try any plan
+                free for 30 Days.</h1>
+            <div class="flex flex-col md:flex-row space-x-0 drop-shadow-2xl">
+                <div class="flex flex-col bg-white px-12 py-12 group">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-3">Basic</h3>
+                    <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-3">Send emails and build an
+                        engaged contact base.</p>
+                    <div class="flex space-x-2 mt-6 align-top">
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">$</span>
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">14.75</span>
+                        <span class="font-lato text-[14px] font-bold text-gray-400 self-center">/month</span>
+                    </div>
+                    <ul class="space-y-4 my-6">
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">16 Users</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Unlimited payment gateways
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Multiple tax regions</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Saas Metrics</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Salesforce & Avalara</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Chargebee Revenue Story
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Facebook Ads</li>
+                    </ul>
+                    <a href="#"
+                        class="font-lato text-[14px] font-bold text-darkBlue text-center rounded-full py-2 px-6 mt-3 border-2 border-gray-400 group-hover:text-white group-hover:bg-lightBlue group-hover:border-lightBlue transition-all ease-in-out duration-300">Start
+                        Free Trial</a>
+                </div>
+                <div class="flex flex-col bg-white px-12 py-12 border-x-2 border-gray-100 group">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-3">Professional</h3>
+                    <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-3">Generate leads, sell
+                        products, and grow your profits.</p>
+                    <div class="flex space-x-2 mt-6 align-top">
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">$</span>
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">49.85</span>
+                        <span class="font-lato text-[14px] font-bold text-gray-400 self-center">/month</span>
+                    </div>
+                    <ul class="space-y-4 my-6">
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">16 Users</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Unlimited payment gateways
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Multiple tax regions</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Saas Metrics</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Salesforce & Avalara</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Chargebee Revenue Story
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Facebook Ads</li>
+                    </ul>
+                    <a href="#"
+                        class="font-lato text-[14px] font-bold text-darkBlue text-center rounded-full py-2 px-6 mt-3 border-2 border-gray-400 group-hover:text-white group-hover:bg-lightBlue group-hover:border-lightBlue transition-all ease-in-out duration-300">Start
+                        Free Trial</a>
+                </div>
+                <div class="flex flex-col bg-white px-12 py-12 group">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue text-left mb-3">Premium</h3>
+                    <p class="font-lato text-[16px] text-gray-500 text-left font-normal mb-3">Evolve your marketing with
+                        an advanced platform.</p>
+                    <div class="flex space-x-2 mt-6">
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">$</span>
+                        <span class="font-archivo text-[40px] font-bold text-lightBlue">94.99</span>
+                        <span class="font-lato text-[14px] font-bold text-gray-400 self-center">/month</span>
+                    </div>
+                    <ul class="space-y-4 my-6">
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">16 Users</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Unlimited payment gateways
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Multiple tax regions</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Saas Metrics</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Salesforce & Avalara</li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Chargebee Revenue Story
+                        </li>
+                        <li class="font-lato text-[16px] text-gray-600 text-left font-normal">Facebook Ads</li>
+                    </ul>
+                    <a href="#"
+                        class="font-lato text-[14px] font-bold text-darkBlue text-center rounded-full py-2 px-6 mt-3 border-2 border-gray-400 group-hover:text-white group-hover:bg-lightBlue group-hover:border-lightBlue transition-all ease-in-out duration-300">Start
+                        Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <section class="container mx-auto my-20 md:my-32 sm:px-3 md:px-[5%]">
+
+        <p class="font-lato text-[14px] text-lightBlue uppercase text-center md:text-left tracking-[0.45em] md:tracking-[0.65em] font-bold">FREQUENT
+            QUESTION</p>
+        <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center md:text-left pb-20">Do you have any
+            question</h1>
+
+        <div class="flex flex-col md:flex-row space-y-16 md:space-y-0 md:space-x-24">
+
+            <div class="flex flex-col md:w-1/2 space-y-0">
+                
+                <div class="faq-toggle">
+                    <input type="radio" name="faq" id="faq1" class="appearance-none peer" checked>
+                    <label for="faq1" class="flex w-full items-center bg-gray-100 peer-checked:bg-lightBlue px-6 py-4 transition-all duration-300 ease-in-out rounded-md relative">
+                        <h1 class="font-archivo text-[16px] font-bold text-darkBlue text-left after:content-['+'] after:absolute after:right-6 after:top-1/2 after:text-3xl after:leading-[0px] transition-all duration-300 ease-in-out">Create the Exact Page you
+                            Want</h1>
+                        <!-- <i class="fa fa-chevron-down peer-checked:fa-chevron-up" aria-hidden="true"></i> -->
+                    </label>
+                    <p class="toggle-text font-lato text-[16px] font-normal text-gray-600 text-left px-6  h-0 opacity-0 py-0 peer-checked:h-auto peer-checked:opacity-100 peer-checked:py-4 transition-[padding] duration-300 ease-in">
+                        Naff knackered brolly Eaton blow off the bee's knees grub so I said chip shop pukka young
+                        delinquent baking cakes cheeky, mush bonnet cras bum bag chimney pot is bite your arm off up the
+                        kyver oxford bugger.
+                    </p>
+                </div>
+                <div class="faq-toggle">
+                    <input type="radio" name="faq" id="faq2" class="appearance-none peer">
+                    <label for="faq2" class="flex w-full items-center bg-gray-100 peer-checked:bg-lightBlue px-6 py-4 transition-all duration-300 ease-in-out rounded-md relative">
+                        <h1 class="font-archivo text-[16px] font-bold text-darkBlue text-left after:content-['+'] after:absolute after:right-6 after:top-1/2 after:text-3xl after:leading-[0px] transition-all duration-300 ease-in-out">What is Counted as Revenue?</h1>
+                        <!-- <i class="fa fa-chevron-down peer-checked:fa-chevron-up" aria-hidden="true"></i> -->
+                    </label>
+                    <p class="toggle-text font-lato text-[16px] font-normal text-gray-600 text-left px-6  h-0 opacity-0 py-0 peer-checked:h-auto peer-checked:opacity-100 peer-checked:py-4 transition-[padding] duration-300 ease-in">
+                        2 Eaton blow off the bee's knees grub so I said chip shop pukka young
+                        delinquent baking cakes cheeky, mush bonnet cras bum bag chimney pot is bite your arm off up the
+                        kyver oxford bugger.
+                    </p>
+                </div>
+                <div class="faq-toggle">
+                    <input type="radio" name="faq" id="faq3" class="appearance-none peer">
+                    <label for="faq3" class="flex w-full items-center bg-gray-100 peer-checked:bg-lightBlue px-6 py-4 transition-all duration-300 ease-in-out rounded-md relative">
+                        <h1 class="font-archivo text-[16px] font-bold text-darkBlue text-left after:content-['+'] after:absolute after:right-6 after:top-1/2 after:text-3xl after:leading-[0px] transition-all duration-300 ease-in-out">Are There any Cancellation Charges?</h1>
+                        <!-- <i class="fa fa-chevron-down peer-checked:fa-chevron-up" aria-hidden="true"></i> -->
+                    </label>
+                    <p class="toggle-text font-lato text-[16px] font-normal text-gray-600 text-left px-6  h-0 opacity-0 py-0 peer-checked:h-auto peer-checked:opacity-100 peer-checked:py-4 transition-[padding] duration-300 ease-in">
+                        1 Eaton blow off the bee's knees grub so I said chip shop pukka young
+                        delinquent baking cakes cheeky, mush bonnet cras bum bag chimney pot is bite your arm off up the
+                        kyver oxford bugger.
+                    </p>
+                </div>
+                <div class="faq-toggle">
+                    <input type="radio" name="faq" id="faq4" class="appearance-none peer">
+                    <label for="faq4" class="flex w-full items-center bg-gray-100 peer-checked:bg-lightBlue px-6 py-4 transition-all duration-300 ease-in-out rounded-md relative">
+                        <h1 class="font-archivo text-[16px] font-bold text-darkBlue text-left after:content-['+'] after:absolute after:right-6 after:top-1/2 after:text-3xl after:leading-[0px] transition-all duration-300 ease-in-out">Do I Get a Sandbox</h1>
+                        <!-- <i class="fa fa-chevron-down peer-checked:fa-chevron-up" aria-hidden="true"></i> -->
+                    </label>
+                    <p class="toggle-text font-lato text-[16px] font-normal text-gray-600 text-left px-6  h-0 opacity-0 py-0 peer-checked:h-auto peer-checked:opacity-100 peer-checked:py-4 transition-[padding] duration-300 ease-in">
+                        3 Eaton blow off the bee's knees grub so I said chip shop pukka young
+                        delinquent baking cakes cheeky, mush bonnet cras bum bag chimney pot is bite your arm off up the
+                        kyver oxford bugger.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:w-1/2">
+                <img class='w-[94%] h-[94%]' src="./images/hero-image.png" alt="hero-image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonial Section -->
+
+    <section class="container mx-auto my-20 md:my-44 sm:px-3 md:px-[5%]">
+        <p class="font-lato text-[14px] text-lightBlue uppercase text-center tracking-[0.45em] md:tracking-[0.65em] font-bold">TESTIMONIAL</p>
+        <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center pb-32">What they are saying</h1>
+        <div class="flex flex-col-reverse md:flex-row space-x-0">
+            <div class="flex flex-col px-10 md:px-20 py-28 bg-[#F9FAFC] space-y-6 md:space-y-0 md:w-1/2 relative">
+                <h3 class="font-archivo text-[20px] font-normal text-darkBlue text-center md:text-left">Build any page on your own</h3>
+                <p class="font-lato text-[18px] font-normal text-gray-400 text-center md:text-left leading-8">I don't want no agro bleeding say cup of char what a plonker have it cobblers naff, hanky panky arse starkers William only a quid pardon you cuppa pukka, on your bike mate spiffing barmy off his nut lost the plot up the duff. </p>
+
+                <div>
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue text-center md:text-left">Jason Response</h3>
+                    <p class="font-lato text-[16px] font-normal text-gray-400 text-center md:text-left">Co-founder</p>
+                </div>
+
+                <div class="absolute top-1/2 -left-7 z-10 hidden md:block">
+                    <div class="w-4 h-4 p-8 rounded-full drop-shadow-md hover:drop-shadow-2xl bg-white relative transition-all duration-300 ease-in-out"><i class="fa fa-chevron-left absolute m-0 text-gray-400 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"></i></div>
+                </div>
+                <div class="absolute top-1/2 -right-7 z-10 hidden md:block">
+                    <div class="w-4 h-4 p-8 rounded-full drop-shadow-md hover:drop-shadow-2xl bg-white relative transition-all duration-300 ease-in-out"><i class="fa fa-chevron-right absolute m-0 text-gray-400 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"></i></div>
+                </div>
+
+
+            </div>
+            <div class="flex flex-col pl-20 pr-32 py-28 bg-lightBlue md:w-1/2 relative">
+
+                <p class="font-lato text-[16px] font-normal text-white">Go Global</p>
+                <h2 class="font-archivo text-[64px] font-bold text-white text-left pb-6 -pt-4">92%</h2>
+                <h3 class="font-archivo text-[23px] font-normal text-white text-left pb-10">And expanded globally from
+                    Europe.</h3>
+
+                <a href="#"
+                class="font-lato text-[14px] font-bold text-white text-center rounded-full py-2 px-6 mt-3 border-2 border-white hover:text-lightBlue hover:bg-white hover:border-white transition-all ease-in-out duration-300 w-[65%] md:w-[45%]">Read This Story</a>
+
+                <div class="flex justify-end w-1/2 absolute bottom-0 right-0 z-10 opacity-80">
+                    <img class='w-[70%] h-[70%]' src="./images/hero-image.png" alt="hero-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+
+    <section class="bg-cover bg-center bg-no-repeat bg-scroll my-20 md:my-36" style="background-image: url('./images/background.jpg')">
+
+        <div class="container mx-auto sm:px-3 md:px-[5%] flex flex-col md:flex-row py-28 space-y-10 md:space-y-0 md:space-x-16">
+            <div class="md:w-2/3 text-center md:text-left self-center">
+                <h2 class="font-archivo text-[35px] md:text-[45px] text-white font-bold leading-10 md:leading-[54px]">Ready to get started?<br>Setup takes less than 5 minutes</h2>
+            </div>
+
+            <div class="md:w-1/3 text-right self-center">
+                <button href="#" class="font-lato text-[14px] font-bold text-white text-center px-16 py-4 rounded-full border-2 border-white hover:text-lightBlue hover:bg-white hover:border-white transition-all ease-in-out duration-300">Read This Story</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Team Section -->
+
+    <section class="container mx-auto sm:px-3 md:px-[5%] space-y-2">
+        <p class="font-lato text-[14px] text-lightBlue uppercase text-center tracking-[0.45em] md:tracking-[0.65em] font-bold">MEET THE TEAM
+        </p>
+        <h1 class="font-archivo text-[35px] md:text-[45px] font-bold leading-10 md:leading-[74px] text-darkBlue text-center pb-14">A Small but Mighty Team</h1>
+        <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+            <div
+                class="md:w-1/4 bg-white rounded-xl group hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100 relative">
+
+                <div class="">
+                    <img src="./images/team-image.jpg" alt="" class="min-w-full max-h-96 md:max-h-52 object-cover rounded-t-xl object-top">
+                </div>
+
+                <div class="px-8 pt-28 pb-20 group-hover:bg-lightBlue group-hover:pt-20 rounded-b-xl transition-all ease-in-out duration-500">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left">Jason Response</h3>
+                    <p class="font-lato text-[16px] font-normal text-gray-400 group-hover:text-white text-left">Co-founder</p>
+                </div>
+                <div class="flex -bottom-24 group-hover:bottom-0 opacity-0 group-hover:h-20 group-hover:opacity-100 space-x-2 px-8 pb-10 pt-2 overflow-hidden transition-all ease-in-out duration-500 absolute">
+                    <i class="fa fa-thumbs-up p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                    <i class="fa fa-rocket p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <div
+                class="md:w-1/4 bg-white rounded-xl group hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100 relative">
+
+                <div class="">
+                    <img src="./images/team_5.png" alt="" class="min-w-full max-h-96 md:max-h-52 object-cover rounded-t-xl object-top">
+                </div>
+
+                <div class="px-8 pt-28 pb-20 group-hover:bg-lightBlue group-hover:pt-20 rounded-b-xl transition-all ease-in-out duration-500">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left">Jason Response</h3>
+                    <p class="font-lato text-[16px] font-normal text-gray-400 group-hover:text-white text-left">Co-founder</p>
+                </div>
+                <div class="flex -bottom-24 group-hover:bottom-0 opacity-0 group-hover:h-20 group-hover:opacity-100 space-x-2 px-8 pb-10 pt-2 overflow-hidden transition-all ease-in-out duration-500 absolute">
+                    <i class="fa fa-thumbs-up p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                    <i class="fa fa-rocket p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <div
+                class="md:w-1/4 bg-white rounded-xl group hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100 relative">
+
+                <div class="">
+                    <img src="./images/team_image_02.png" alt="" class="min-w-full max-h-96 md:max-h-52 object-cover rounded-t-xl object-top">
+                </div>
+
+                <div class="px-8 pt-28 pb-20 group-hover:bg-lightBlue group-hover:pt-20 rounded-b-xl transition-all ease-in-out duration-500">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left">Jason Response</h3>
+                    <p class="font-lato text-[16px] font-normal text-gray-400 group-hover:text-white text-left">Co-founder</p>
+                </div>
+                <div class="flex -bottom-24 group-hover:bottom-0 opacity-0 group-hover:h-20 group-hover:opacity-100 space-x-2 px-8 pb-10 pt-2 overflow-hidden transition-all ease-in-out duration-500 absolute">
+                    <i class="fa fa-thumbs-up p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                    <i class="fa fa-rocket p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <div
+                class="md:w-1/4 bg-white rounded-xl group hover:text-white transition-all ease-in-out duration-500 border-t-[1px] border-gray-100 relative">
+
+                <div class="">
+                    <img src="./images/team_image_03.png" alt="" class="min-w-full max-h-96 md:max-h-52 object-cover rounded-t-xl object-top">
+                </div>
+
+                <div class="px-8 pt-28 pb-20 group-hover:bg-lightBlue group-hover:pt-20 rounded-b-xl transition-all ease-in-out duration-500">
+                    <h3 class="font-archivo text-[20px] font-bold text-darkBlue group-hover:text-white text-left">Jason Response</h3>
+                    <p class="font-lato text-[16px] font-normal text-gray-400 group-hover:text-white text-left">Co-founder</p>
+                </div>
+                <div class="flex -bottom-24 group-hover:bottom-0 opacity-0 group-hover:h-20 group-hover:opacity-100 space-x-2 px-8 pb-10 pt-2 overflow-hidden transition-all ease-in-out duration-500 absolute">
+                    <i class="fa fa-thumbs-up p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                    <i class="fa fa-rocket p-2 rounded-full border-[1px] border-white text-white hover:text-lightBlue hover:bg-white transition-all ease-in-out duration-500" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="bg-cover bg-center bg-no-repeat bg-scroll bg-[#F9FAFC] mt-36" style="background-image: url('./images/overlay.png')">
+
+        <div class="container mx-auto sm:px-4 md:px-[5%] flex flex-col md:flex-row py-28 space-y-10 md:space-y-0 md:space-x-20">
+            <div class="md:w-[47%] flex flex-col space-y-4 md:space-y-0 md:px-10 py-6">
+                <p class="font-lato text-[14px] text-lightBlue uppercase tracking-[0.45em] md:tracking-[0.65em] font-bold">CONTACT US</p>
+                <h2 class="font-archivo text-[35px] md:text-[45px] leading-10 text-darkBlue font-bold">Get in Touch</h2>
+                <p class="font-lato text-lg md:text-[20px] text-darkBlue font-normal leading-7 pb-8">We do outstanding work with WordPress, &
+                we're outstanding to work with.</p>
+                <ul class="space-y-4 w-2/3">
+                    <li class="font-lato text-[18px] text-gray-500 font-normal">+645 478 895 24</li>
+                    <li class="font-lato text-[18px] text-gray-500 font-normal">support@gmail.com</li>
+                    <li class="font-lato text-[18px] text-gray-500 font-normal">247 Main Street Mohammadpur New York, USA</li>
+                </ul>
+            </div>
+
+            <div class="md:w-[53%] bg-white p-4 md:p-16 md:ml-6 drop-shadow-2xl rounded-lg">
+                <div class="space-y-8">
+                    <input type="text" placeholder="Full Name" class="bg-gray-100 w-full px-6 py-4 rounded-lg">
+                    <input type="text" placeholder="Subject" class="bg-gray-100 w-full px-6 py-4 rounded-lg">
+                    <textarea class="bg-gray-100 w-full px-6 py-4 rounded-lg text-gray-400" rows="6">Write a Message</textarea>
+                </div>
+                <div class="flex space-x-2 mt-3 items-center">
+                    <input type="checkbox">
+                    <p class="font-lato text-[16px] text-gray-400 font-normal">I accept the privacy and terms.</p>
+                </div>
+                <div class="mt-10">
+                    <button href="#" class="font-lato text-[16px] font-bold text-white text-center bg-lightBlue px-8 py-3 rounded-full">Send Message</button> 
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

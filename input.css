@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.service-box::before {
+    position: absolute;
+    content: '';
+    top: -100px;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    border-bottom-left-radius: 50%;
+    background-color: #4172F3;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.service-box:hover::before {
+    top: 0;
+    opacity: 0.5;
+}
+
+.faq-toggle input:checked ~ label h1 {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+.faq-toggle input:checked ~ label i {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+.faq-toggle input:checked ~ label h1::after {
+    transform: rotate(135deg);
+    transition: transform 0.5s ease-in-out;
+}
